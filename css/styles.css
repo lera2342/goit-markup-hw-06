@@ -802,6 +802,7 @@ display: inline-block;
     align-items: center;
     justify-content: center;
     transition: fill 250ms;
+    background-image: url(../images/icons.svg#icon-close-black);
 }
 
 .is-hidden {
