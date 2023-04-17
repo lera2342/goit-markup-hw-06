@@ -841,6 +841,7 @@ display: inline-block;
     top: 20px;
     bottom: 8px;
     transform: translateY(-50%);
+    color: #2E2F42;
 }
 
 .modal-input {
