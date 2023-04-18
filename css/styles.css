@@ -491,7 +491,7 @@ body {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    gap: 80px;
     padding: 0;
 }
 
@@ -536,11 +536,14 @@ body {
 .btn-subscribe {
     width: 165px;
     height: 40px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    /* margin-left: 20px; */
+    margin-left: 24px;
         padding: 8px 24px;
-        background-image: url(../images/icon-telegram.svg);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        /* background-image: url(../images/icons.svg#icon-icon-telegram); */
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -551,20 +554,13 @@ body {
             border-radius: 4px;
             border: 0px;
             background-position: center;
-            padding-left: 64px;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .telegram-icon {
     width: 24px;
     height: 20px;
-    position: absolute;
-        content: '';
-        top: 50%;
-        transform: translateY(-50%);
-        background-repeat: no-repeat;
-        background-image: url(../images/icon-telegram.svg);
-        left: 188%;
+        gap: 16px;
 }
 
 .online-input {
@@ -594,14 +590,9 @@ body {
     position: relative;
 } 
 
-.subscribe-wrap-btn {
-    position: absolute;
-    margin-top: 40px;
-}
 
-.btn-subscribe {
-    transform: translateX(calc(453px - 168px));
-    top: -30px;
+.form-footer {
+display: flex;
 }
 
 
@@ -761,7 +752,7 @@ display: inline-block;
 
 .modal {
     width: 408px;
-    height: 576px;
+    height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
@@ -770,6 +761,7 @@ display: inline-block;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px;
+    padding-top: 72px;
 }
 
 .modal-close-btn {
@@ -779,9 +771,11 @@ display: inline-block;
     border-radius: 50%;
     background-color: #E7E9FC;
     display: block;
-    margin-left: auto;
     padding: 0;
+    top: 5%;
+    left: 88%;
     cursor: pointer;
+    position: absolute;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -823,11 +817,10 @@ display: inline-block;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 20px;
-    margin-top: 24px;
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -848,7 +841,6 @@ display: inline-block;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    margin-bottom: 8px;
     border-radius: 4px;
     outline: transparent;
     padding-left: 38px;
@@ -901,11 +893,11 @@ display: inline-block;
     width: 100%;
         height: 100px;
         border: 1px solid rgba(46, 47, 66, 0.4);
-        margin-bottom: 8px;
         border-radius: 4px;
         outline: transparent;
         padding: 8px 16px;
         resize: none;
+        display: block;
     }
 
     .check-text {
@@ -917,6 +909,7 @@ display: inline-block;
             display: flex;
             align-items: center;
             position: relative;
+            padding-bottom: 8px;
     }
 
     .privacy-policy {
